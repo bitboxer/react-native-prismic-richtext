@@ -1,6 +1,13 @@
 // @ts-ignore
 import { Elements } from 'prismic-richtext'
-import { ImageStyle, StyleProp, TextStyle, ViewStyle } from 'react-native'
+import {
+  ImageStyle,
+  StyleProp,
+  Text,
+  TextProps,
+  TextStyle,
+  ViewStyle,
+} from 'react-native'
 
 export type RichTextElementType = Elements[keyof Elements]
 
@@ -70,6 +77,20 @@ export type RichTextStyles = {
     | StyleProp<TextStyle>
     | StyleProp<ViewStyle>
     | StyleProp<ImageStyle>
+}
+
+export interface SerializerFunction {
+  (
+    type: RichTextElementType,
+    element: SpanType,
+    text: string,
+    children: React.ComponentElement<TextProps, Text>,
+    index: string
+  ): React.ComponentElement<TextProps, Text> | null
+}
+
+export type RichTextSerializer = {
+  [key in keyof Elements]?: SerializerFunction
 }
 
 export type RichTextDefaultStyles = TextStyle

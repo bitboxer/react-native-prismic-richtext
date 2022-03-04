@@ -55,6 +55,6 @@
     ]
   },
   "dependencies": {
-    "prismic-richtext": "^1.0.3"
+    "@prismicio/richtext": "^2.0.1"
   }
 }
