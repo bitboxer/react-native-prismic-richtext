@@ -1,8 +1,9 @@
 /// <reference types="react" />
+import { RTImageNode } from '@prismicio/types';
 import { ImageStyle, StyleProp, ViewProps, ViewStyle } from 'react-native';
-import { ImageType, LinkFunction } from '../../typings';
+import { LinkFunction } from '../../typings';
 declare type ImageProps = ViewProps & {
-    element: ImageType;
+    element: RTImageNode;
     wrapperStyle?: StyleProp<ViewStyle>;
     style?: StyleProp<ImageStyle>;
     onLinkPress?: LinkFunction;

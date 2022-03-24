@@ -1,7 +1,8 @@
+import { RichTextField } from '@prismicio/types';
 import React from 'react';
-import { LinkFunction, RichTextContent, RichTextDefaultStyles, RichTextSerializer, RichTextStyles } from '../typings';
+import { LinkFunction, RichTextDefaultStyles, RichTextSerializer, RichTextStyles } from '../typings';
 declare type RichTextProps = {
-    richText: RichTextContent[];
+    richText: RichTextField;
     defaultStyle?: RichTextDefaultStyles;
     styles?: RichTextStyles;
     ContainerComponent?: React.ComponentClass | React.ExoticComponent;
