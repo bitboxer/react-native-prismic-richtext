@@ -48,7 +48,7 @@
       // Optionally overwrite rendering with custom component
       serializers={{
         embed: (_type, element, _text, _children, _key) => {
-          const embed = (element as any) as OembedType
+          const embed = element as RTEmbedNode
           return <Text key={key}>{embed.oembed.title}</Text>
         },
       }}

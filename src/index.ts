@@ -40,6 +40,8 @@ export const RichText = ({
   }
 
   const computedStyles = computeStyles(defaultStyle, styles)
+  console.log(' starting to render prismic document')
+  console.log('render with ', PrismicRichText.serialize)
   const serializedChildren = PrismicRichText.serialize(
     richText,
     serializerWithStyle(computedStyles, onLinkPress, serializers)
