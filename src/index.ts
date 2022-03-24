@@ -1,4 +1,4 @@
-import PrismicRichText from '@prismicio/richtext'
+import { serialize } from '@prismicio/richtext'
 import { RichTextField } from '@prismicio/types'
 import React, { createElement, Fragment } from 'react'
 
@@ -39,8 +39,10 @@ export const RichText = ({
     return null
   }
 
+  console.log('computing styles')
   const computedStyles = computeStyles(defaultStyle, styles)
-  const serializedChildren = PrismicRichText.serialize(
+  console.log(' starting to render prismic document')
+  const serializedChildren = serialize(
     richText,
     serializerWithStyle(computedStyles, onLinkPress, serializers)
   )
