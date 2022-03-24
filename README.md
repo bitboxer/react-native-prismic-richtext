@@ -24,7 +24,7 @@
           marginLeft: 8,
           marginVertical: 8,
         },
-        oList: {
+        'o-list': {
           marginLeft: 8,
           marginVertical: 8,
         },
