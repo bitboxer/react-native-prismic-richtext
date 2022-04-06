@@ -194,10 +194,8 @@ export const serializerWithStyle = (
   children: SerializerChildren,
   index: string
 ) => {
-  console.log('serailizing', type)
   const serializeTag = serializers && serializers[type]
   if (serializeTag !== undefined) {
-    console.log('serializing tag with serializeTag', serializeTag)
     return serializeTag(type, element, text, children, index)
   }
   switch (type) {
