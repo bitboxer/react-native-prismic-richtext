@@ -1,6 +1,6 @@
 {
   "name": "react-native-prismic-richtext-reloaded",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "homepage": "https://github.com/Spoutnik97/react-native-prismic-richtext",
   "main": "lib/index.js",
@@ -8,7 +8,8 @@
   "author": "Bodo Tasche <bodo@wannawork.de>, Guillaume Piedigrossi <guillaume.piedigrossi@gadz.org>",
   "license": "MIT",
   "files": [
-    "lib"
+    "lib",
+    "typings"
   ],
   "keywords": [
     "prismic",
