@@ -1,6 +1,14 @@
+# This is a fork
+
+I forked this from [here](https://github.com/Spoutnik97/react-native-prismic-richtext). This fork will be
+deleted in the future as soon as my branch is merged into the main repository.
+
+The reason to fork was to update the prismic richtext library to the latest version. This also now uses
+the types defined by prismic for as much as possible.
+
 # Installation
 
-- Run `yarn add react-native-prismic-richtext`
+- Run `yarn add react-native-prismic-richtext-reloaded`
 
 # Usage
 
